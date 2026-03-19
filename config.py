@@ -35,9 +35,12 @@ FEATURE_SET = [
 
 SLIDING_WINDOW_PARAMS = {
     'window_size': 7,           # Size of sliding window (odd number)
-    'min_valid_voxels': 3,      # Minimum valid voxels in window to compute features
+    'min_valid_voxels': 10,     # Minimum valid voxels in window to compute features
     'binWidth': 25              # Bin width for intensity discretization
 }
+# NOTE:
+# The minimum valid voxel threshold is set to 10 to ensure consistency with the manuscript.
+# A previous version of the code used a threshold of 3, which has been corrected.
 
 # ==================== CLUSTERING PARAMETERS ====================
 CLUSTERING_PARAMS = {
